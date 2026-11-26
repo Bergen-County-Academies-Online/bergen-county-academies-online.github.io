@@ -17,4 +17,9 @@ function createShortcut(name, URL) {
     document.getElementById("shortcutsContainer").appendChild(shortcut);
 }
 
-createShortcut("Schoology", "https://sc.bergencountyacademies.com");
+const SHORTCUT_NAMES = ["Schoology", "PowerSchool"];
+const SHORTCUT_LINK_PREFIXES = ["sc", "ps"];
+
+for (let i = 0; i < SHORTCUT_NAMES.length; i++) {
+    createShortcut(SHORTCUT_NAMES[i], "https://" + SHORTCUT_LINK_PREFIXES[i] + ".bergencountyacademies.com");
+}
