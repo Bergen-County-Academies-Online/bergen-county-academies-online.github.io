@@ -1,6 +1,9 @@
 function createShortcut(name, URL) {
     let shortcut = document.createElement("div");
     shortcut.className = "shortcut";
+    shortcut.addEventListener("click", () => {
+        location.href = URL;
+    })
 
     let shortcutTitle = document.createElement("h2");
     shortcutTitle.innerText = name;
@@ -11,7 +14,7 @@ function createShortcut(name, URL) {
     shortcutURL.innerHTML = URL.replace("https://", "");
     shortcut.appendChild(shortcutURL);
 
-    document.body.appendChild(shortcut);
+    document.getElementById("shortcutsContainer").appendChild(shortcut);
 }
 
 createShortcut("Schoology", "https://sc.bergencountyacademies.com");
