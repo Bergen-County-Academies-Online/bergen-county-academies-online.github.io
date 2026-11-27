@@ -1,7 +1,19 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+            "wdth" 100;
+}
+
+h1 {
+    text-align: center;
+}
 #shortcutsContainer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
-    gap: 10px;
+    gap: 20px;
     text-align: center;
     place-items: center;
     justify-content: center;
@@ -9,13 +21,14 @@
 .shortcut {
     background-color: #173F78;
     color: #D6AD25;
-    width: 200px;
+    width: 242px;
     padding: 8px 8px 8px 8px;
     cursor: pointer;
 }
 .shortcut:hover {
     background-color: #D6AD25;
     color: black;
+    text-decoration: underline;
     a {
         color: black;
     }

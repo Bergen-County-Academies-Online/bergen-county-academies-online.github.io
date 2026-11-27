@@ -4,6 +4,7 @@ function createShortcut(name, URL) {
     shortcut.addEventListener("click", () => {
         location.href = URL;
     })
+    shortcut.title = URL;
 
     let shortcutTitle = document.createElement("h2");
     shortcutTitle.innerText = name;
