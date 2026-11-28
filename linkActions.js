@@ -18,8 +18,8 @@ function createShortcut(name, URL) {
     document.getElementById("shortcutsContainer").appendChild(shortcut);
 }
 
-const SHORTCUT_NAMES = ["Schoology", "PowerSchool"];
-const SHORTCUT_LINK_PREFIXES = ["sc", "ps"];
+const SHORTCUT_NAMES = ["Schoology", "PowerSchool", "Class Cancellation", "TurnItIn", "DeltaMath", "CodingBat", "Councelor Bookings", "NHS Tutoring", "Senior Privilege", "Transcripts", "Clubs"];
+const SHORTCUT_LINK_PREFIXES = ["sc", "ps", "cc", "tii", "dm", "cob", "cb", "nhst", "sp", "tr", "cl"];
 
 for (let i = 0; i < SHORTCUT_NAMES.length; i++) {
     createShortcut(SHORTCUT_NAMES[i], "https://" + SHORTCUT_LINK_PREFIXES[i] + ".bergencountyacademies.com");
