@@ -10,6 +10,14 @@ body {
 h1 {
     text-align: center;
 }
+#toolbarContainer {
+    display: flex;
+    gap: 5rem;
+    background-color: #e7d69d;
+    padding-left: 1rem;
+    border-radius: 40px;
+    font-weight: bold;
+}
 #shortcutsContainer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
